@@ -1,40 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" href="img/its.ico" type="image/x-icon">
     <title>Guia Integra Saúde</title>
 </head>
-<body>
+<body onresize="changeSize()">
     <header>
         <h1>Sistemas</h1>
+        <i id="option" class="material-icons" onclick="clickMenu()">menu</i>
 
-        <nav id="menu">
-            <ul class="mv">MV
-                <li><a href="#">Ambulatórios</a></li>
+        <nav id="itens">
+            <ul class="mv"><h4>MV</h4>
+                <li><a href="sub/mv/amb.html">Ambulatórios</a></li>
                 <li><a href="#">Consultas</a></li>
                 <li><a href="#">Exames</a></li>
             </ul>
-            <ul class="cross">Cross
+            <ul class="cross"><h4>Cross</h4>
                 <li><a href="#">Novo Cadastro</a></li>
                 <li><a href="#">Verificar Cadastro</a></li>
                 <li><a href="#">Nomenclatura - Consultas</a></li>
                 <li><a href="#">Nomenclatura - Exames</a></li>
             </ul>
-            <ul class="treining">Treinamento
+            <ul class="treining"><h4>Treinamento</h4>
                 <li><a href="#">Sistema</a></li>
                 <li><a href="#">Apresentação Receptivo</a></li>
                 <li><a href="#">Tabulações</a></li>
                 <li><a href="#">Apresentação Ativo</a></li>
                 <li><a href="#">Interações</a></li>
             </ul>
-            <ul class="utility">Utilidades
+            <ul class="utility"><h4>Utilidades</h4>
                 <li><a href="#">Endereço das Unidades</a></li>
                 <li><a href="#">Tabela de Agendamentos</a></li>
             </ul>
         </nav>
     </header>
+
+    <main>
+        <article>
+            <h1>Novidades:</h1>
+
+            <p>O profissional <strong>Marcos Pereira Araújo médico Cirurgião Vascular</strong> (Seambesp Zona NOroeste), não fará mais atendimento na unidade. Os pacientes que estiverem na lista de espera para este profissional devem ser agendados para os Drs.(a) Ronaldo H. Canas, Anndya Barbosa G. Mesquita ou Cláudia Carneiro de A. Augusto.</p>
+        </article>
+    </main>
+
+    <footer>
+        <h1>Modo dark e modo light:</h1>
+        <div class="trilho" id="trilho">
+            <div class="indicador"></div>
+        </div>
+    </footer>
+
+    <script src="estilos/script.js"></script>
     
 </body>
 </html>
