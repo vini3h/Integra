@@ -33,6 +33,7 @@ nav > ul {
     border: 2px solid black;
     border-radius: 15px;
     margin: 5px;
+    width: 200px;
 }
 
 ul > li {
